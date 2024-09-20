@@ -1,0 +1,57 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Basic Page Styles */
+body {
+  font-family: Arial, sans-serif;
+}
+
+section {
+  height: 100vh;
+  padding: 50px;
+}
+
+/* Navigation Styles */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #333;
+  padding: 10px 0;
+  transition: background-color 0.3s;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.nav-item {
+  margin: 0 20px;
+}
+
+.nav-item a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.nav-item a:hover {
+  color: #ff6347;
+}
+
+/* Change Navbar style on scroll */
+.navbar.scrolled {
+  background-color: #555;
+}
+
+/* Change font color of scrolled items */
+.navbar.scrolled .nav-item a {
+  color: #fff;
+}
